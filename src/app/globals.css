@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Newsreader:ital,opsz,wght@1,6..72,400;1,6..72,500&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: #faf9f6;
+  --bg-card: #ffffff;
+  --text-primary: #111318;
+  --text-secondary: #525866;
+  --text-muted: #8c95a6;
+  --border-subtle: #eae7e1;
+  --border-card: #e5e0d8;
+  --accent-antara: #0f766e;
+  --accent-gold: #c29b38;
+}
+
+.dark {
+  --bg-primary: #0b0d12;
+  --bg-card: #13161f;
+  --text-primary: #f3f4f6;
+  --text-secondary: #9ca3af;
+  --text-muted: #6b7280;
+  --border-subtle: #1f2430;
+  --border-card: #272d3d;
+  --accent-antara: #14b8a6;
+  --accent-gold: #fbbf24;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-editorial {
+  font-family: 'Newsreader', Georgia, serif;
+  font-style: italic;
+}
+
+.bg-sand-pattern {
+  background-image: radial-gradient(rgba(17, 19, 24, 0.04) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #334155;
+}
+
+/* Custom Glass Accent (Subtle & Intentional) */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(229, 225, 215, 0.7);
+}
+.dark .glass-panel {
+  background: rgba(19, 22, 31, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(39, 45, 61, 0.7);
+}
+
+/* Pulse animation for active AI status */
+@keyframes soft-pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(1.08); }
+}
+.animate-soft-pulse {
+  animation: soft-pulse 2.5s infinite ease-in-out;
+}
