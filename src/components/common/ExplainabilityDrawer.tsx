@@ -68,7 +68,7 @@ export const ExplainabilityDrawer: React.FC<ExplainabilityDrawerProps> = ({
                 </h5>
 
                 <div className="p-3.5 rounded-xl bg-amber-500/10 border border-amber-500/20 text-xs text-amber-900 dark:text-amber-200 leading-relaxed font-medium">
-                  "{action.reason}"
+                  &ldquo;{action.reason}&rdquo;
                 </div>
 
                 <div className="p-4 rounded-xl border border-zinc-200 dark:border-zinc-800 space-y-2">

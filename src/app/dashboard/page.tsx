@@ -321,7 +321,7 @@ export default function DashboardOverviewPage() {
               Live AI Agent Decisions & Actions
             </h3>
             <p className="text-xs text-zinc-500">
-              Click any agent decision to inspect the "Why this action?" details drawer
+            Click any agent decision to inspect the &quot;Why this action?&quot; details drawer
             </p>
           </div>
 
